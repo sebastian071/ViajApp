@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="add_photos_button" type="id" />
+    <item name="save_trip_button" type="id" />
+    <item name="view_map_button" type="id" />
+    <item name="create_trip_button" type="id" />
+    <item name="edit_trip_button" type="id" />
+    <item name="share_itinerary_button" type="id" />
+    <item name="edit_profile_button" type="id" />
+</resources>

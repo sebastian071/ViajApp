@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TripDetailActivity">
+
+    <ImageView
+        android:id="@+id/trip_image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/trip_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_image" />
+
+    <TextView
+        android:id="@+id/trip_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Título del Viaje"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/trip_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/trip_notes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Notas del viaje..."
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/trip_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/edit_trip_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Editar Viaje"
+        app:layout_constraintTop_toBottomOf="@id/trip_notes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/share_itinerary_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Compartir Itinerario"
+        app:layout_constraintTop_toBottomOf="@id/edit_trip_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

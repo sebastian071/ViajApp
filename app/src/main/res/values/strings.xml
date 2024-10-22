@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ViajApp</string>
+    <string name="trip_image" />
+    <string name="profile_image" />
+</resources>
